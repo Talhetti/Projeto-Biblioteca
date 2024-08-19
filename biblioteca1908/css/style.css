@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+body{
+    background-color: #453F78;
+}
+.container-TodosElementosHeader{
+    display: flex;
+    justify-content: space-between;
+}
+.container-DivisaoUrl {
+    width: -webkit-fill-available;
+    height: 10px;
+}
+
+.container-Branco {
+    width: auto;
+    background-color: rgb(255, 255, 255);
+}
+
+.container-ImagemlogoLupa{
+    display: flex;
+}
+.container-ImagemLogo >img{
+    width: 140px;
+    height: 100px;
+}.container-Imagemlupa > img{
+    width: 40px;
+    height: 40px;
+    margin-top: 8px;
+}
+
+.container-BarraInput{
+    padding-top: 3px;
+    padding-left: 2px;
+
+}.container-BarraInput > input{
+    width: 400px;
+    height: 50px;
+    padding: 10px;
+    color: white;
+    background-color: #D9D9D9;
+    border-radius: 30px;
+    border: none;
+}
+
+.container-PesquisaEImagemLupa{
+    display: flex;
+    align-items: right;
+    padding-top: 20px;
+}
+.container-ElementosIterativos{
+    margin-top: 25px;
+    margin-right: 20px;
+}.container-ElementosIterativos > a{
+    padding-left: 10px;
+    text-decoration: none;
+}.container-ElementosIterativos > a:active {
+    color:#FF9A00;;
+    text-decoration:underline;
+}
+.container-botoes{
+    display: flex;
+    display: contents;
+}
+#container-Login{
+    color: black;
+    background-color: white;
+    width: 83px;
+    height: 32px;
+    border-radius: 8px;
+}
+#container-Register{
+    color: white;
+    background-color: #FF9A00;
+    width: 83px;
+    height: 32px;
+    border-radius: 8px;
+}
+
+/*-----------------SOBREPOSIÇÃO DO MOUSE-----------------------*/
+
+#container-login:hover {
+    background-color: #D9D9D9;
+}
+#container-Register:hover {
+    background-color: #d07d00;
+}
+
+/*-------------------------------------------------------------*/
+.container-DividirLivros{
+    width: 100%;
+    height: 20px;
+}
+
+main{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.container-TopicosLivros{
+    width: 200vh;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    background-color: white;
+}
+
+.container-Lista{
+    padding: 8px;
+    padding-top: 15px;
+    margin-left: 30px;
+}.container-Lista > a{
+    margin-right: 50px;
+    text-decoration: none;
+    margin-bottom: 1px;
+}.container-Lista > a:active{
+    color:#FF9A00;;
+    text-decoration:underline;
+}
+/*Menu*/
+
+/*-------------------------------------------------------------------*/
+.container-DividirLivros2{
+    width: 100%;
+    height: 35px;
+}
+
+.container-livros{
+    width: 200vh;
+    height: 48vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-Livro1, .container-Livro2, .container-Livro3, .container-Livro4{
+    width: 245px;
+    height: 410px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+    background-color: white;
+} 
+
+.container-Livro1 > img, .container-Livro2 > img, .container-Livro3 > img, .container-Livro4 > img{
+    width: 212px;
+    height: 249px;
+    margin: 17px;
+    
+}
+.Titulo{
+    font-size: 20px;
+    padding-top: 5px;
+}
+.Autor{
+    font-size: 17px;
+    padding-top: 6px;
+}
+
+.botao{
+    margin-top: 15px;
+    margin-left: 40px;
+}
+.containerInfoLivro{
+    margin-left: 15px;
+    padding-bottom: 3px;
+}
+
+.containerInfoLivro > button{
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid black;
+    color: white;
+    padding: 5px;
+    background-color: #FF9A00;
+    padding-right: 20px;
+    padding-left: 20px;
+}.containerInfoLivro> button:active{
+    background-color: #d07d00;
+}
+
+
+.container-DividirLivros3{
+    width: 100%;
+    height: 10vh;
+    margin-top: 9vh;
+}
+/*---------------------------------------------------------------------------------*/
+
+.container-SegundaFileira{
+    width: 200vh;
+    height: 48vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-Livro5, .container-Livro6, .container-Livro7, .container-Livro8{
+    width: 245px;
+    height: 410px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+    background-color: white;
+} 
+
+.container-Livro5 > img, .container-Livro6 > img, .container-Livro7 > img, .container-Livro8 > img{
+    width: 212px;
+    height: 249px;
+    margin: 17px;   
+}
+
+/*FOOTER*/
+.container-DividirFooter{
+    width: -webkit-fill-available;
+    height: 19vh;
+}
+footer{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    background-color: #FF9A00;
+    color: white;
+}footer > small{
+    padding-top: 10px;
+}
