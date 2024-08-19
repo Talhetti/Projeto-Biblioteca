@@ -43,20 +43,103 @@
 
             <div class="container-TopicosLivros">
                 <div class="container-Lista">
-                    <a href>Livros</a>
-                    <a href>Terror</a>
-                    <a href>Suspense</a>
-                    <a href>Romance</a>
-                    <a href>Ficção científica</a>
+                    <button onclick="recarregarPag()">Livros</button>
+                    <button onclick="removeMostrar('terror')">Terror</button>
+                    <button onclick="removeMostrar('suspense')">Suspense</button>
+                    <button onclick="removeMostrar('romance')">Romance</button>
+                    <button onclick="removeMostrar('fantasia')">Fantasia</button>
                 </div>
             </div>
-            <div class="corposite">
-                <div class="container-DividirLivros2"></div>
 
-                <div class="container-livros">
+            <div id="divLivros">
+            <div class="container-DividirLivros2"></div>
+
+            <div class="container-livros">
+                <div class="container-Livro1">
+                    <img src="./imagensSite/Pasta capas livros/It a coisa.jpg"
+                        alt>
+                    <div class="containerInfoLivro">
+                        <p class="Titulo"><b>It a coisa</b></p>
+                        <p class="Autor">Autor: Stephen King</p>
+                        <button class="botao">Informações</button>
+                    </div>
+                </div>
+                <div class="container-Livro2">
+                    <img src="./imagensSite/Pasta capas livros/O exorcista.jpg"
+                        alt>
+                    <div class="containerInfoLivro">
+                        <p class="Titulo"><b>O exorcista</b></p>
+                        <p class="Autor">Autor: William Peter Blaty</p>
+                        <button class="botao">Informações</button>
+                    </div>
+                </div>
+                <div class="container-Livro3">
+                    <img src="./imagensSite/Pasta capas livros/O substituto - suspense.jpg" alt>
+                    <div class="containerInfoLivro">
+                        <p class="Titulo"><b>O substituto</b></p>
+                        <p class="Autor">Autor: Brenna Yovanoff</p>
+                        <button class="botao">Informações</button>
+                    </div>
+                </div>
+                <div class="container-Livro4">
+                    <img
+                        src="./imagensSite/Pasta capas livros/Um quarto com vista.jpg"
+                        alt>
+                    <div class="containerInfoLivro">
+                        <p class="Titulo"><b>Um quadro com vista</b></p>
+                        <p class="Autor">Autor: E. M. Forster</p>
+                        <button class="botao">Informações</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container-DividirLivros3"></div>
+
+            <div class="containerLivroRestante">
+                <div class="container-SegundaFileira">
+                    <div class="container-Livro5">
+                        <img src="./imagensSite/Pasta capas livros/DUND.jpg" alt="">
+                        <div class="containerInfoLivro">
+                            <p class="Titulo"><b>Duna</b></p>
+                            <p class="Autor">Autor: E. M. Forster</p>
+                            <button class="botao">Informações</button>
+                        </div>
+                    </div>
+                    <div class="container-Livro6">
+                        <img src="./imagensSite/Pasta capas livros/A pedra filosofal.jpg" alt="">
+                        <div class="containerInfoLivro">
+                            <p class="Titulo"><b>A pedra filosofal</b></p>
+                            <p class="Autor">Autor: J. K. Rowling</p>
+                            <button class="botao">Informações</button>
+                        </div>
+                    </div>
+                    <div class="container-Livro7">
+                        <img src="./imagensSite/Pasta capas livros/Dimensão.jpg" alt="">
+                        <div class="containerInfoLivro">
+                            <p class="Titulo"><b>Dimensão sci-fi</b></p>
+                            <p class="Autor">Autor:Luiz Fabrício Mendes</p>
+                            <button class="botao">Informações</button>
+                        </div>
+                    </div>
+                    <div class="container-Livro8">
+                        <img src="./imagensSite/Pasta capas livros/Origem.jpg" alt="">
+                        <div class="containerInfoLivro">
+                            <p class="Titulo"><b>A Origem</b></p>
+                            <p class="Autor">Autor: Dan Brown</p>
+                            <button class="botao">Informações</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <template id="terrorTemplate">
+        <div class="container-DividirLivros2"></div>
+            <div class="LivroTerror" style="display: flex;">
                     <div class="container-Livro1">
-                        <img
-                            src="./imagensSite/Pasta capas livros/It a coisa.jpg"
+                        <img src="./imagensSite/Pasta capas livros/It a coisa.jpg"
                             alt>
                         <div class="containerInfoLivro">
                             <p class="Titulo"><b>It a coisa</b></p>
@@ -64,92 +147,102 @@
                             <button class="botao">Informações</button>
                         </div>
                     </div>
+
                     <div class="container-Livro2">
-                        <img
-                            src="./imagensSite/Pasta capas livros/O exorcista.jpg"
+                        <img src="./imagensSite/Pasta capas livros/O exorcista.jpg"
                             alt>
                         <div class="containerInfoLivro">
                             <p class="Titulo"><b>O exorcista</b></p>
                             <p class="Autor">Autor: William Peter Blaty</p>
                             <button class="botao">Informações</button>
                         </div>
-                    </div>
-                    <div class="container-Livro3">
-                        <img
-                            src="./imagensSite/Pasta capas livros/O substituto - suspense.jpg"
-                            alt>
-                        <div class="containerInfoLivro">
-                            <p class="Titulo"><b>O substituto</b></p>
-                            <p class="Autor">Autor: Brenna Yovanoff</p>
-                            <button class="botao">Informações</button>
-                        </div>
-                    </div>
-                    <div class="container-Livro4">
-                        <img
-                            src="./imagensSite/Pasta capas livros/Um quarto com vista.jpg"
-                            alt>
-                        <div class="containerInfoLivro">
-                            <p class="Titulo"><b>Um quadro com vista</b></p>
-                            <p class="Autor">Autor: E. M. Forster</p>
-                            <button class="botao">Informações</button>
-                        </div>
+            </div>
+        </div>
+        </template>
 
+        <template id="suspenseTemplate">
+            <div class="container-DividirLivros2"></div>
+            <div class="LivroTerror" style="display: flex;">
+                <div class="container-Livro3">
+                    <img src="./imagensSite/Pasta capas livros/O substituto - suspense.jpg" alt>
+                    <div class="containerInfoLivro">
+                        <p class="Titulo"><b>O substituto</b></p>
+                        <p class="Autor">Autor: Brenna Yovanoff</p>
+                        <button class="botao">Informações</button>
                     </div>
                 </div>
 
-                <div class="container-DividirLivros3"></div>
+                <div class="container-Livro8">
+                    <img src="./imagensSite/Pasta capas livros/Origem.jpg" alt="">
+                    <div class="containerInfoLivro">
+                        <p class="Titulo"><b>A Origem</b></p>
+                        <p class="Autor">Autor: Dan Brown</p>
+                        <button class="botao">Informações</button>
+                    </div>
+                </div>
+        </div>
 
-                <div class="containerLivroRestante">
-                    <div class="container-SegundaFileira">
-                        <div class="container-Livro5">
-                            <img src="./imagensSite/Pasta capas livros/DUND.jpg"
+        </template>
+
+        <template id="romanceTemplate">
+            <div class="container-DividirLivros2"></div>
+            <div class="LivroTerror" style="display: flex;">
+                <div class="container-Livro5">
+                    <img src="./imagensSite/Pasta capas livros/DUND.jpg" alt="">
+                    <div class="containerInfoLivro">
+                        <p class="Titulo"><b>Duna</b></p>
+                        <p class="Autor">Autor: E. M. Forster</p>
+                        <button class="botao">Informações</button>
+                    </div>
+                </div>
+
+                        <div class="container-Livro4">
+                            <img
+                                src="./imagensSite/Pasta capas livros/Um quarto com vista.jpg"
                                 alt>
                             <div class="containerInfoLivro">
-                                <p class="Titulo"><b>Duna</b></p>
+                                <p class="Titulo"><b>Um quadro com vista</b></p>
                                 <p class="Autor">Autor: E. M. Forster</p>
                                 <button class="botao">Informações</button>
                             </div>
+        
                         </div>
-                        <div class="container-Livro6">
-                            <img
-                                src="./imagensSite/Pasta capas livros/A pedra filosofal.jpg"
-                                alt>
-                            <div class="containerInfoLivro">
-                                <p class="Titulo"><b>Harry Potter: A pedra
-                                        filosofal</b></p>
-                                <p class="Autor">Autor: J. K. Rowling</p>
-                                <button class="botao">Informações</button>
-                            </div>
-                        </div>
-                        <div class="container-Livro7">
-                            <img
-                                src="./imagensSite/Pasta capas livros/Harry Potter e a Fenix.jpg"
-                                alt>
-                            <div class="containerInfoLivro">
-                                <p class="Titulo"><b>Harry Potter e a
-                                        Fenix</b></p>
-                                <p class="Autor">Autor: J. K. Rowling</p>
-                                <button class="botao">Informações</button>
-                            </div>
-                        </div>
-                        <div class="container-Livro8">
-                            <img
-                                src="./imagensSite/Pasta capas livros/Origem.jpg"
-                                alt>
-                            <div class="containerInfoLivro">
-                                <p class="Titulo"><b>A Origem</b></p>
-                                <p class="Autor">Autor: Dan Brown</p>
-                                <button class="botao">Informações</button>
-                            </div>
-                        </div>
-                    </div>
+        </div>
+
+        </template>
+
+        <template id="fantasiaTemplate">
+            <div class="container-DividirLivros2"></div>
+            <div class="LivroTerror" style="display: flex;">
+            <div class="container-Livro6">
+                <img src="./imagensSite/Pasta capas livros/A pedra filosofal.jpg" alt="">
+                <div class="containerInfoLivro">
+                    <p class="Titulo"><b>A pedra filosofal</b></p>
+                    <p class="Autor">Autor: J. K. Rowling</p>
+                    <button class="botao">Informações</button>
                 </div>
             </div>
-        </main>
 
-        <div class="DividirFooter"></div>
+            <div class="container-Livro7">
+                <img src="./imagensSite/Pasta capas livros/Dimensão.jpg" alt="">
+                <div class="containerInfoLivro">
+                    <p class="Titulo"><b>Dimensão sci-fi</b></p>
+                    <p class="Autor">Autor:Luiz Fabrício Mendes</p>
+                    <button class="botao">Informações</button>
+                </div>
+            </div>
+        </div>
+        </template>
+
+
+            <div id="areaConteudo"></div>
+            
+
+        </main>
+        <div class="container-DividirFooter"></div>
         <footer>
-            <small>&copy; OriginBook</small>
+            <small>&copy; Copyright</small>
         </footer>
+        <script src="main.js"></script>
     </body>
 </html>
