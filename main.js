@@ -22,3 +22,11 @@ function removeMostrar(section){
 function recarregarPag(){
     location.reload();
 }
+
+function removeMostrarTentar(section) {
+    try {
+        removeMostrar(section);
+    } catch (error) {
+        recarregarPag();
+    }
+}
