@@ -128,11 +128,10 @@ body{
     display: flex;
 }
 .bordadentro{
-    border: 2px solid black;
     width: -webkit-fill-available;
-    margin-right: 12vh;
-    height: 64vh;
-    margin-top: 25px;
+    border: 1px solid black;
+    margin-top: 60px;
+    margin-right: 30px;
 }
 
 .conteudo{
@@ -148,7 +147,7 @@ body{
 .botao{
     display: flex;
     justify-content: center;
-    margin-right: 5vh;
+    margin-right: 5vh;  
 }.botao > button{
     margin-top: 5vh;
     background-color: #FF9A00;
