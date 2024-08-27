@@ -8,6 +8,7 @@
 body{
     background-color: #453F78;
 }
+
 .container-TodosElementosHeader{
     display: flex;
     justify-content: space-between;
@@ -126,6 +127,8 @@ body{
 
 .livroesumario{
     display: flex;
+    width: -webkit-fill-available;
+    height: 480px;
 }
 .bordadentro{
     width: -webkit-fill-available;
