@@ -31,10 +31,10 @@ function removeMostrarTentar(section) {
     }
 }
 
-function search_books() {
+function search_livros() {
     let input = document.getElementById('searchbar').value
     input=input.toLowerCase();
-    let x = document.getElementsByClassName('books');
+    let x = document.getElementsByClassName('livros');
 
     for (i = 0; i < x.length; i++) { 
         if (!x[i].innerHTML.toLowerCase().includes(input)) {
