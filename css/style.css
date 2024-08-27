@@ -130,7 +130,7 @@ main{
     width: 200vh;
     height: 48vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .container-Livro1, .container-Livro2, .container-Livro3, .container-Livro4{
@@ -193,7 +193,7 @@ main{
     width: 200vh;
     height: 48vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .container-Livro5, .container-Livro6, .container-Livro7, .container-Livro8{
     width: 245px;
