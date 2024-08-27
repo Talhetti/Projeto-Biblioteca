@@ -23,7 +23,7 @@
                     </div>
 
                     <div class="container-BarraInput">
-                        <input type="text" placeholder="Digite seu livro">
+                        <input id="searchbar" type="text" placeholder="Digite seu livro" onkeyup="search_livros()">
                     </div>
                 </div>
 
@@ -53,8 +53,9 @@
 
             <div id="divLivros">
             <div class="container-DividirLivros2"></div>
-
+            
             <div class="container-livros">
+                <div class="livros">
                 <div class="container-Livro1">
                     <img src="./imagensSite/Pasta capas livros/It a coisa.jpg"
                         alt>
@@ -64,6 +65,8 @@
                         <button class="botao"><a style="color: white;" href="./TELAS LIVROS/itacoisa.html">Informações</a></button>
                     </div>
                 </div>
+                </div>
+                <div class="livros">
                 <div class="container-Livro2">
                     <img src="./imagensSite/Pasta capas livros/O exorcista.jpg"
                         alt>
@@ -73,6 +76,8 @@
                         <button class="botao"><a style="color: white;" href="./TELAS LIVROS/oexorcista.html">Informações</a></button>
                     </div>
                 </div>
+                </div>
+                <div class="livros">
                 <div class="container-Livro3">
                     <img src="./imagensSite/Pasta capas livros/O substituto - suspense.jpg" alt>
                     <div class="containerInfoLivro">
@@ -81,6 +86,8 @@
                         <button class="botao"><a style="color: white;" href="./TELAS LIVROS/osubistituto.html">Informações</a></button>
                     </div>
                 </div>
+            </div>
+                <div class="livros">
                 <div class="container-Livro4">
                     <img
                         src="./imagensSite/Pasta capas livros/Um quarto com vista.jpg"
@@ -93,11 +100,12 @@
 
                 </div>
             </div>
+            </div>
 
             <div class="container-DividirLivros3"></div>
 
-            <div class="containerLivroRestante">
                 <div class="container-SegundaFileira">
+                    <div class="livros">
                     <div class="container-Livro5">
                         <img src="./imagensSite/Pasta capas livros/DUND.jpg" alt="">
                         <div class="containerInfoLivro">
@@ -106,6 +114,8 @@
                             <button class="botao"><a style="color: white;" href="./TELAS LIVROS/duna.html">Informações</a></button>
                         </div>
                     </div>
+                    </div>
+                    <div class="livros">
                     <div class="container-Livro6">
                         <img src="./imagensSite/Pasta capas livros/A pedra filosofal.jpg" alt="">
                         <div class="containerInfoLivro">
@@ -114,6 +124,8 @@
                             <button class="botao"><a style="color: white;" href="./TELAS LIVROS/apedrafilosofal.html">Informações</a></button>
                         </div>
                     </div>
+                    </div>
+                    <div class="livros">
                     <div class="container-Livro7">
                         <img src="./imagensSite/Pasta capas livros/Dimensão.jpg" alt="">
                         <div class="containerInfoLivro">
@@ -122,6 +134,8 @@
                             <button class="botao"><a style="color: white;" href="./TELAS LIVROS/dimensaosci-fi.html">Informações</a></button>
                         </div>
                     </div>
+                    </div>
+                    <div class="livros">
                     <div class="container-Livro8">
                         <img src="./imagensSite/Pasta capas livros/Origem.jpg" alt="">
                         <div class="containerInfoLivro">
@@ -130,14 +144,15 @@
                             <button class="botao"><a style="color: white;" href="./TELAS LIVROS/aorigem.html">Informações</a></button>
                         </div>
                     </div>
+                    </div>
 
                 </div>
-            </div>
         </div>
 
         <template id="terrorTemplate">
         <div class="container-DividirLivros2"></div>
             <div class="LivroTerror" style="display: flex;">
+                <div class="livros">
                     <div class="container-Livro1">
                         <img src="./imagensSite/Pasta capas livros/It a coisa.jpg"
                             alt>
@@ -147,7 +162,8 @@
                             <button class="botao"><a style="color: white;" href="./TELAS LIVROS/itacoisa.html">Informações</a></button>
                         </div>
                     </div>
-
+                </div>
+                <div class="livros">
                     <div class="container-Livro2">
                         <img src="./imagensSite/Pasta capas livros/O exorcista.jpg"
                             alt>
@@ -157,12 +173,14 @@
                             <button class="botao"><a style="color: white;" href="./TELAS LIVROS/oexorcista.html">Informações</a></button>
                         </div>
             </div>
+                </div>
         </div>
         </template>
 
         <template id="suspenseTemplate">
             <div class="container-DividirLivros2"></div>
             <div class="LivroTerror" style="display: flex;">
+                <div class="livros">
                 <div class="container-Livro3">
                     <img src="./imagensSite/Pasta capas livros/O substituto - suspense.jpg" alt>
                     <div class="containerInfoLivro">
@@ -171,7 +189,9 @@
                         <button class="botao"><a style="color: white;" href="./TELAS LIVROS/osubistituto.html">Informações</a></button>
                     </div>
                 </div>
+                </div>
 
+                <div class="livros">
                 <div class="container-Livro8">
                     <img src="./imagensSite/Pasta capas livros/Origem.jpg" alt="">
                     <div class="containerInfoLivro">
@@ -180,6 +200,7 @@
                        <button class="botao"><a style="color: white;" href="./TELAS LIVROS/aorigem.html">Informações</a></button>
                     </div>
                 </div>
+                </div>
         </div>
 
         </template>
@@ -187,6 +208,7 @@
         <template id="romanceTemplate">
             <div class="container-DividirLivros2"></div>
             <div class="LivroTerror" style="display: flex;">
+                <div class="livros">
                 <div class="container-Livro5">
                     <img src="./imagensSite/Pasta capas livros/DUND.jpg" alt="">
                     <div class="containerInfoLivro">
@@ -195,7 +217,8 @@
                         <button class="botao"><a style="color: white;" href="./TELAS LIVROS/duna.html">Informações</a></button>
                     </div>
                 </div>
-
+                </div>
+                <div class="livros">
                         <div class="container-Livro4">
                             <img
                                 src="./imagensSite/Pasta capas livros/Um quarto com vista.jpg"
@@ -207,6 +230,7 @@
                             </div>
         
                         </div>
+                </div>
         </div>
 
         </template>
@@ -214,6 +238,7 @@
         <template id="fantasiaTemplate">
             <div class="container-DividirLivros2"></div>
             <div class="LivroTerror" style="display: flex;">
+                <div class="livros">
             <div class="container-Livro6">
                 <img src="./imagensSite/Pasta capas livros/A pedra filosofal.jpg" alt="">
                 <div class="containerInfoLivro">
@@ -222,7 +247,8 @@
                     <button class="botao"><a style="color: white;" href="./TELAS LIVROS/apedrafilosofal.html">Informações</a></button>
                 </div>
             </div>
-
+                </div>
+                <div class="livros">
             <div class="container-Livro7">
                 <img src="./imagensSite/Pasta capas livros/Dimensão.jpg" alt="">
                 <div class="containerInfoLivro">
@@ -231,6 +257,7 @@
                     <button class="botao"><a style="color: white;" href="./TELAS LIVROS/dimensaosci-fi.html">Informações</a></button>
                 </div>
             </div>
+        </div>
         </div>
         </template>
 
